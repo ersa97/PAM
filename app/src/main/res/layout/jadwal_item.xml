@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/button2"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/TextViewSubjek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subjek"
+            android:ellipsize="marquee"
+            android:layout_toStartOf="@id/TextViewDosen"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+        <TextView
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/TextViewDosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dosen"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+        <TextView
+            android:id="@+id/TextViewJadwal"
+            app:layout_constraintTop_toBottomOf="@id/TextViewSubjek"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/TextViewSubjek"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
